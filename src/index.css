@@ -1,0 +1,127 @@
+:root {
+  /* Green-forward design tokens */
+  --green-50: #f0fdf4;
+  --green-100: #dcfce7;
+  --green-200: #bbf7d0;
+  --green-300: #86efac;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-700: #15803d;
+  --green-900: #14532d;
+
+  --amber-100: #fef3c7;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+  --amber-700: #92400e;
+
+  --red-100: #fee2e2;
+  --red-600: #dc2626;
+  --red-700: #991b1b;
+
+  --teal-100: #ccfbf1;
+  --teal-500: #14b8a6;
+  --teal-600: #0d9488;
+  --teal-700: #0f766e;
+
+  --indigo-100: #e0e7ff;
+  --indigo-500: #6366f1;
+  --indigo-600: #4f46e5;
+  --indigo-700: #4338ca;
+
+  --ink-900: #0f1a14;
+  --ink-700: #33403a;
+  --ink-500: #5b6b63;
+  --ink-300: #94a39c;
+
+  --surface: #ffffff;
+  --surface-muted: #f6faf7;
+  --border: #e2e9e4;
+  --border-strong: #cddad2;
+
+  --shadow-sm: 0 1px 2px rgba(15, 26, 20, 0.06);
+  --shadow-md: 0 4px 16px rgba(15, 26, 20, 0.08);
+  --shadow-lg: 0 12px 32px rgba(15, 26, 20, 0.12);
+  --shadow-float: 0 10px 30px rgba(20, 40, 30, 0.08), 0 2px 8px rgba(20, 40, 30, 0.04);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 22px;
+
+  --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+
+  color-scheme: light;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--surface-muted);
+  color: var(--ink-700);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-sans);
+  color: var(--ink-900);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+  letter-spacing: 0.02em;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--green-200);
+  border-radius: 6px;
+  background: var(--green-50);
+  color: var(--green-900);
+}
+
+/* Cuon trang tone theo mau thuong hieu thay vi thanh cuon xam mac dinh - chi thuan CSS, khong ton hieu nang. */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 999px;
+  border: 2px solid var(--surface-muted);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green-300);
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--green-200);
+}
